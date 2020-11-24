@@ -76,8 +76,10 @@ cmake "${ROOT_DIR}" \
     -DAPPIMAGEKIT_APPRUN_EXECUTABLE="${ROOT_DIR}/../appimagekit/AppRun" \
     -DSIGN_PACKAGE=OFF
 make -j16
-make package
+# TODO-JYW: No longer needed in 4.8.0
+# make package
 
+# TODO-JYW: No longer needed in 4.8.0
 # Copy the appimage to the output directory
-chmod a+x Cura-*.AppImage
-cp Cura-*.AppImage "${CURA_BUILD_OUTPUT_DIR}/appimages/"
+# chmod a+x Cura-*.AppImage
+# cp Cura-*.AppImage "${CURA_BUILD_OUTPUT_DIR}/appimages/"
